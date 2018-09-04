@@ -1,0 +1,1374 @@
+{
+    "configs": {
+        "topTaskBar": false,
+        "sound": false,
+        "wallpaper": "https://raindrop.io/files/drop45406180/45406180_nature-wallpapers.jpg",
+        "wallpaperBlur": false,
+        "wallpaperSlide": false,
+        "wallpaperSlideRandom": true,
+        "wallpaperSlideItv": 1,
+        "wallpaperSlideTime": 1519442460788,
+        "wallpaperSlideIndex": 8,
+        "openMax": 9,
+        "idCounter": 197,
+        "themeColor": "rgba(24,28,71,1)",
+        "autoThemeColor": true,
+        "wallpapers": [
+            {
+                "image": "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
+            },
+            {
+                "image": "./res/img/wallpapers/bg1.jpg",
+                "preview": "./res/img/wallpapers/bg1_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg2.jpg",
+                "preview": "./res/img/wallpapers/bg2_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg3.jpg",
+                "preview": "./res/img/wallpapers/bg3_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg4.jpg",
+                "preview": "./res/img/wallpapers/bg4_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg5.jpg",
+                "preview": "./res/img/wallpapers/bg5_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg6.jpg",
+                "preview": "./res/img/wallpapers/bg6_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg7.jpg",
+                "preview": "./res/img/wallpapers/bg7_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg8.jpg",
+                "preview": "./res/img/wallpapers/bg8_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg9.jpg",
+                "preview": "./res/img/wallpapers/bg9_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg10.jpg",
+                "preview": "./res/img/wallpapers/bg10_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg11.jpg",
+                "preview": "./res/img/wallpapers/bg11_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg12.jpg",
+                "preview": "./res/img/wallpapers/bg12_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg13.jpg",
+                "preview": "./res/img/wallpapers/bg13_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg14.jpg",
+                "preview": "./res/img/wallpapers/bg14_1.jpg"
+            },
+            {
+                "image": "./res/img/wallpapers/bg15.jpg",
+                "preview": "./res/img/wallpapers/bg15_1.jpg"
+            },
+            {
+                "image": "https://raindrop.io/files/drop45406180/45406180_nature-wallpapers.jpg",
+                "preview": ""
+            }
+        ],
+        "pathRes": "./res",
+        "shortcutsSortAuto": true,
+        "debug": false,
+        "winBlur": true
+    },
+    "apps": {
+        "yl-system": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "YLUI系统设置面板",
+            "icon": {
+                "type": "fa",
+                "bg": "#436fde",
+                "content": "gear"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "x": "x*0.05",
+                "y": "y*0.05",
+                "left": true,
+                "top": true,
+                "autoOffset": true
+            },
+            "version": "1.0.0",
+            "poweredBy": "YLUI",
+            "resizable": true,
+            "single": true,
+            "size": {
+                "width": "920",
+                "height": "590"
+            },
+            "title": "Settings",
+            "url": "./res/apps/yl-system/index.html",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "yl-color-picker": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "简单的取色器",
+            "icon": {
+                "type": "fa",
+                "bg": "#3289c7",
+                "content": "eyedropper"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "x": "(x-207)/2",
+                "y": "(y-239)/2",
+                "left": true,
+                "top": true,
+                "autoOffset": false
+            },
+            "version": "1.0.0",
+            "poweredBy": "Yuri2",
+            "resizable": false,
+            "single": true,
+            "size": {
+                "width": "207",
+                "height": "239"
+            },
+            "title": "取色器",
+            "url": "./res/apps/colorPicker/colorPicker.html",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "yl-browser": {
+            "addressBar": true,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "浏览器",
+            "icon": {
+                "type": "fa",
+                "content": "internet-explorer",
+                "bg": "#3a55c2"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.1",
+                "y": "y*0.1"
+            },
+            "version": "1.0.0",
+            "poweredBy": "Yuri2",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "浏览器",
+            "url": "./res/apps/browser/index.html",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "yl-app-store": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "fa",
+                "content": "shopping-bag",
+                "bg": "#b36aba"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.1",
+                "y": "y*0.1"
+            },
+            "version": "1.0.0",
+            "poweredBy": "Yuri2",
+            "resizable": true,
+            "single": true,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "应用商店",
+            "url": "https://appstore.ylui.yuri2.cn",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "yl-app-home": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "YLUI官方网站",
+            "icon": {
+                "type": "fa",
+                "content": "yoast",
+                "bg": "#6b96cf"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.1",
+                "y": "y*0.1"
+            },
+            "version": "1.0.0",
+            "poweredBy": "Yuri2",
+            "resizable": true,
+            "single": true,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "YLUI 官网",
+            "url": "https://ylui.yuri2.cn",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "yl-server": {
+            "addressBar": false,
+            "autoRun": 1,
+            "background": false,
+            "badge": 0,
+            "desc": "YLUI官方后台服务",
+            "icon": {
+                "type": "fa",
+                "content": "yoast",
+                "bg": "#6b96cf"
+            },
+            "openMode": "min",
+            "plugin": true,
+            "position": {
+                "autoOffset": false,
+                "left": false,
+                "top": false,
+                "x": "4",
+                "y": "4"
+            },
+            "version": "1.0.0",
+            "poweredBy": "Yuri2",
+            "resizable": true,
+            "single": true,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "YLUI官方后台服务",
+            "url": "https://server.ylui.yuri2.cn",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-152": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "fa",
+                "content": "cogs",
+                "bg": "#120f12"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "Json Viewer",
+            "url": "http://jsonviewer.stack.hu",
+            "customTile": "",
+            "urlRandomToken": false
+        },
+        "app-154": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "fa",
+                "content": "bookmark",
+                "bg": "#752475"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "Collections",
+            "url": "https://raindrop.io/user/35237",
+            "customTile": "",
+            "urlRandomToken": false
+        },
+        "app-160": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "fa",
+                "content": "barcode",
+                "bg": "#2d2647"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "System Designer",
+            "url": "https://esironal.github.io/System-Designer-Static",
+            "customTile": "",
+            "urlRandomToken": false
+        },
+        "app-161": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "img",
+                "content": "https://raindrop.io/files/drop45405900/45405900_ini.png",
+                "bg": "#9db7c7"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "Aspire",
+            "url": "http://esironal-Aspire-one",
+            "customTile": "",
+            "urlRandomToken": false
+        },
+        "app-167": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(82,186,63)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-168": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "fa",
+                "content": "sticky-note",
+                "bg": "rgb(105,46,199)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "Simple Note",
+            "url": "http://esironal.github.io/apps/simple",
+            "customTile": "",
+            "urlRandomToken": false
+        },
+        "app-169": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(127,136,132)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-170": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "fa",
+                "content": "cube",
+                "bg": "rgb(68,74,71)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "Fontawesome Gallery",
+            "url": " https://fontawesome.com/icons?d=gallery&m=free",
+            "customTile": "",
+            "urlRandomToken": false
+        },
+        "app-171": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(103,150,45)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-172": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(68,191,90)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-173": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(167,114,122)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-174": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(149,169,16)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-175": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(184,189,187)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-176": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "img",
+                "content": "https://c.staticblitz.com/assets/client/components/SideMenu/blitz_logo-11cebad97cad4b50bc955cf72f532d1b.png",
+                "bg": "#4f3273"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "stackblitz:edit:js-kc79z6",
+            "url": "https://stackblitz.com/edit/js-kc79z6",
+            "customTile": "",
+            "urlRandomToken": false
+        },
+        "app-177": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(2,6,187)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-178": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(21,191,138)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-179": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "img",
+                "content": "https://raindrop.io/files/drop45405891/45405891_floppy-drive-5-14.png",
+                "bg": "rgb(197,167,120)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "File Manager",
+            "url": "http://localhost/kode/index.php?explorer&type=iframe&path=/var/www/html/ylui",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-180": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(7,86,92)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-181": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(99,12,188)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-182": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "fa",
+                "content": "code",
+                "bg": "rgb(59,117,197)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "editor-ylui-index",
+            "url": "http://localhost/kode/index.php?editor/edit#filename=%2Fvar%2Fwww%2Fhtml%2Fylui%2Findex.html",
+            "customTile": "",
+            "urlRandomToken": false
+        },
+        "app-183": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(57,161,38)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        },
+        "app-184": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "",
+                "bg": "rgb(126,168,48)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "",
+            "url": "",
+            "customTile": "",
+            "urlRandomToken": true
+        }
+    },
+    "shortcuts": [
+        {
+            "app": "yl-browser",
+            "title": "Browser",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "yl-system",
+            "title": "Settings",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-152",
+            "title": "Json Viewer",
+            "params": {},
+            "hash": "",
+            "style": {
+                "position": {
+                    "x": 559.86,
+                    "y": 185.86,
+                    "left": true,
+                    "top": true,
+                    "autoOffset": false
+                },
+                "size": {
+                    "height": 442,
+                    "width": 730
+                }
+            }
+        },
+        {
+            "app": "app-154",
+            "title": "Collections",
+            "params": {},
+            "hash": "",
+            "style": {
+                "position": {
+                    "x": 125.72000000000003,
+                    "y": 149.72,
+                    "left": true,
+                    "top": true,
+                    "autoOffset": false
+                },
+                "size": {
+                    "height": 662,
+                    "width": 1175
+                }
+            }
+        },
+        {
+            "app": "app-161",
+            "title": "Aspire",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-160",
+            "title": "System Designer",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-182",
+            "title": "editor-ylui-index",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-170",
+            "title": "Fontawesome Gallery",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-168",
+            "title": "Simple Note",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-176",
+            "title": "stackblitz:edit:js-kc79z6",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-179",
+            "title": "File Manager",
+            "params": {},
+            "hash": ""
+        }
+    ],
+    "tiles": [
+        {
+            "title": "系统",
+            "data": [
+                {
+                    "x": 4,
+                    "y": 2,
+                    "w": 2,
+                    "h": 2,
+                    "app": "yl-system",
+                    "title": "系统设置",
+                    "i": "110",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 2,
+                    "w": 2,
+                    "h": 2,
+                    "app": "yl-browser",
+                    "title": "浏览器",
+                    "i": "146",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 2,
+                    "y": 0,
+                    "w": 2,
+                    "h": 2,
+                    "app": "app-182",
+                    "title": "editor-ylui-index",
+                    "i": "186",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 4,
+                    "w": 6,
+                    "h": 2,
+                    "app": "app-160",
+                    "title": "System Designer",
+                    "i": "187",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 6,
+                    "w": 6,
+                    "h": 4,
+                    "app": "app-161",
+                    "title": "Aspire",
+                    "i": "188",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 2,
+                    "y": 2,
+                    "w": 2,
+                    "h": 2,
+                    "app": "app-170",
+                    "title": "Fontawesome Gallery",
+                    "i": "190",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "w": 2,
+                    "h": 2,
+                    "app": "app-154",
+                    "title": "Collections",
+                    "i": "191",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 4,
+                    "y": 0,
+                    "w": 2,
+                    "h": 2,
+                    "app": "app-152",
+                    "title": "Json Viewer",
+                    "i": "192",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 10,
+                    "w": 2,
+                    "h": 2,
+                    "app": "app-168",
+                    "title": "Simple Note",
+                    "i": "194",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 12,
+                    "w": 2,
+                    "h": 2,
+                    "app": "app-179",
+                    "title": "File Manager",
+                    "i": "196",
+                    "params": {},
+                    "hash": ""
+                }
+            ]
+        },
+        {
+            "title": "分组164-esironal-system-bak",
+            "data": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "w": 6,
+                    "h": 2,
+                    "app": "yl-app-store",
+                    "title": "应用商店",
+                    "i": "91",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 2,
+                    "w": 6,
+                    "h": 2,
+                    "app": "yl-app-home",
+                    "title": "YLUI 官网",
+                    "i": "147",
+                    "params": {},
+                    "hash": ""
+                }
+            ]
+        }
+    ],
+    "startMenu": {
+        "width": 1068,
+        "height": 781,
+        "sidebar": [
+            {
+                "app": "app-180",
+                "title": "",
+                "params": {},
+                "hash": ""
+            },
+            {
+                "app": "app-168",
+                "title": "Simple Note",
+                "params": {},
+                "hash": ""
+            },
+            {
+                "app": "app-170",
+                "title": "Fontawesome Gallery",
+                "params": {},
+                "hash": ""
+            },
+            {
+                "app": "app-182",
+                "title": "editor-ylui-index",
+                "params": {},
+                "hash": ""
+            },
+            {
+                "app": "app-160",
+                "title": "System Designer",
+                "params": {},
+                "hash": ""
+            },
+            {
+                "app": "yl-browser",
+                "title": "浏览器",
+                "params": {},
+                "hash": ""
+            },
+            {
+                "app": "yl-system",
+                "title": "系统设置"
+            }
+        ],
+        "menu": {
+            "itemPushed-85": {
+                "app": "yl-browser",
+                "title": "浏览器",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-89": {
+                "app": "yl-app-home",
+                "title": "YLUI 官网",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-96": {
+                "app": "yl-system",
+                "title": "系统设置",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-88": {
+                "app": "yl-app-store",
+                "title": "应用商店",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-153": {
+                "app": "app-152",
+                "title": "Json Viewer",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-155": {
+                "app": "app-154",
+                "title": "Collections",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-162": {
+                "app": "app-161",
+                "title": "Aspire",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-165": {
+                "app": "app-160",
+                "title": "System Designer",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-185": {
+                "app": "app-182",
+                "title": "editor-ylui-index",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-189": {
+                "app": "app-170",
+                "title": "Fontawesome Gallery",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-193": {
+                "app": "app-168",
+                "title": "Simple Note",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-195": {
+                "app": "app-179",
+                "title": "File Manager",
+                "params": {},
+                "hash": ""
+            }
+        }
+    }
+}

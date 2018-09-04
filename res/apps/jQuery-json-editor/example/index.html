@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON Editor</title>
+        <script src="./js/jquery.js"></script>
+        <script src="../src/jquery-json-editor.js"></script>
+        <script src="./js/handlers.js"></script>
+        <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" charset="utf-8">
+    </head>
+    <body>
+        <h1>Awesome Form</h1>
+
+        <div class="row">
+            <div class="left">
+                <div>
+                    <button id="updateForm">Update Form</button><br>
+                    <label>
+                        <span>Input Data</span><br>
+                        <textarea cols="60" rows="20" style="width:100%" id="inputData">
+a = {
+    data: {
+        country: "Romania",
+        name: {
+            first: "Johnny",
+            last: "B."
+        },
+        student: true,
+        hobbies: ["piano", "blogging"],
+        born: new Date(1995, 9 - 1, 14),
+        keyboards: [
+            {
+                manufacturer: "Yamaha",
+                _type: "PSR8000",
+                pianoKeys: false,
+                digital: "Yes"
+            },
+            {
+                manufacturer: "Yamaha",
+                _type: "P95",
+                pianoKeys: true,
+                digital: "Yes"
+            }
+        ],
+        editableObject: {
+            "you can edit this field": "and this value"
+        },
+        preferredMusicGenre: "classical",
+        editableObjectWithPossibleAnswers: {
+            "random number": 3,
+            "another field with editable name": "value"
+        },
+        deepObject: {
+            test: "Testing",
+            subobject: {
+                test2: "Testing 2",
+                subsubobject: {
+                    test3: "Testing 3"
+                },
+                dogs: [
+                    {
+                        name: "Bobby",
+                        breed: "Boxer",
+                        accessories: {
+                            lead: true,
+                            muzzle: true,
+                            collar: true,
+                            clothes: true,
+                            toys: [
+                                { name: "ball", quantity: 2 },
+                                { name: "frisbee", quantity: 1 }
+                            ]
+                        }
+                    },
+                    {
+                        name: "Rex",
+                        breed: "Wolfdog",
+                        accessories: {
+                            lead: true,
+                            muzzle: true,
+                            collar: true,
+                            clothes: false,
+                            toys: [
+                                { name: "ball", quantity: 1 }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    schema: { // the types are inferred from the data above
+        _order: ["age", "country", "name", "student", "hobbies", "born",
+            "keyboards", "editableObject", "preferredMusicGenre",
+            "editableObjectWithPossibleAnswers", "dateFieldWithPossibleValues",
+            "deepObject"],
+        age: { label: "Age", type: "number" },
+        country: { label: "Country" },
+        name: {
+            label: " ",
+            addField: true,
+            deletableFields: true,
+            editableFields: true,
+            schema: {
+                _order: ["first", "last"],
+                first: { label: "First Name" },
+                last: { label: "Last Name" }
+            }
+        },
+        student: { label: "Student" },
+        hobbies: { label: "Hobbies",
+            addField: true,
+            deletableFields: true,
+            schema: {
+                possible: [
+                    "piano",
+                    "blogging",
+                    "computers",
+                    "science",
+                    "music"
+                ]
+            }
+        },
+        born: { label: "Born Date" },
+        keyboards: {
+            label: "Keyboards",
+            addField: true,
+            deletableFields: true,
+            schema: {
+                _order: ["manufacturer", "_type", "pianoKeys", "digital"],
+                manufacturer: { label: "Manufacturer" },
+                _type: { label: "Type" },
+                pianoKeys: { label: "Piano Keys" },
+                digital: { label: "Digital", possible: ["Yes", "No"] },
+            }
+        },
+        editableObject: { label: "Editable Object", edit: { key: true } },
+        preferredMusicGenre: {
+            label: "Preferred music genre",
+            possible: [
+                "blues",
+                "classical",
+                "electronic",
+                "folk",
+                "hip hop",
+                "pop",
+                "rock"
+            ]
+        },
+        editableObjectWithPossibleAnswers: {
+            label: "Editable object with possible answers",
+            edit: { key: true },
+            schema: {
+                "random number": {
+                    deletable: true,
+                    possible: [1, 2, 3, 4, 5]
+                }
+            }
+        },
+        dateFieldWithPossibleValues: {
+            label: "Choose a date",
+            editable: true,
+            possible: [
+                new Date(2015, 7, 3),
+                new Date(2014, 8, 9),
+                new Date(2013, 3, 8),
+                new Date(2012, 1, 10),
+                new Date(2011, 10, 11)
+            ]
+        },
+        deepObject: {
+            label: "Deep object",
+            addField: true,
+            deletableFields: true,
+            editableFields: true,
+            schema: {
+                _order: ["test", "subobject"],
+                test: { label: "Test" },
+                subobject: {
+                    label: "Sub-object",
+                    schema: {
+                        _order: ["test2", "subsubobject", "dogs"],
+                        test2: { label: "Test 2" },
+                        subsubobject: {
+                            label: "Sub-sub-object",
+                            schema: {
+                                _order: ["test3"],
+                                test3: { label: "Test 3" },
+                            }
+                        },
+                        dogs: { // an array nested in an object
+                            label: "Dogs",
+                            addField: true,
+                            deletableFields: true,
+                            schema: {
+                                _order: ["name", "breed", "accessories"],
+                                name: { label: "Name" },
+                                breed: { label: "Breed", possible: ["Dalmatian",
+                                    "Boxer", "Wolfdog"] },
+                                accessories: { label: "Accessories",
+                                    schema: {
+                                        _order: ["lead", "muzzle", "collar",
+                                            "clothes", "toys"],
+                                        lead: { label: "Lead" },
+                                        muzzle: { label: "Muzzle" },
+                                        collar: { label: "Collar" },
+                                        clothes: { label: "Clothes" },
+                                        toys: {
+                                            label: "Toys",
+                                            schema: {
+                                                _order: ["name", "quantity"],
+                                                name: { label: "Name",
+                                                    possible: [ "ball",
+                                                    "frisbee" ] },
+                                                quantity: { label: "Quantity" }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}</textarea>
+                    </label>
+                </div>
+            </div>
+            <div class="right">
+                <button id="getData">Get Data</button>
+                <pre></pre>
+            </div>
+        </div>
+        <hr>
+
+        <div class="first-form"></div>
+    </body>
+</html>
