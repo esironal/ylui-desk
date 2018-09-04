@@ -2,7 +2,7 @@
     "configs": {
         "topTaskBar": false,
         "sound": false,
-        "wallpaper": "https://raindrop.io/files/drop45406180/45406180_nature-wallpapers.jpg",
+        "wallpaper": "https://raindrop.io/files/drop71976610/71976610_beachfront-image-by-ray-bilcliff.jpg",
         "wallpaperBlur": false,
         "wallpaperSlide": false,
         "wallpaperSlideRandom": true,
@@ -10,7 +10,7 @@
         "wallpaperSlideTime": 1519442460788,
         "wallpaperSlideIndex": 8,
         "openMax": 9,
-        "idCounter": 197,
+        "idCounter": 213,
         "themeColor": "rgba(24,28,71,1)",
         "autoThemeColor": true,
         "wallpapers": [
@@ -80,6 +80,10 @@
             {
                 "image": "https://raindrop.io/files/drop45406180/45406180_nature-wallpapers.jpg",
                 "preview": ""
+            },
+            {
+                "image": "https://raindrop.io/files/drop71976610/71976610_beachfront-image-by-ray-bilcliff.jpg",
+                "preview": ""
             }
         ],
         "pathRes": "./res",
@@ -95,9 +99,9 @@
             "badge": 0,
             "desc": "YLUI系统设置面板",
             "icon": {
-                "type": "fa",
-                "bg": "#436fde",
-                "content": "gear"
+                "type": "img",
+                "bg": "",
+                "content": "https://esironal.github.io/ylui-desk/res/file_icon/icon_others/setting.png"
             },
             "openMode": "normal",
             "plugin": false,
@@ -295,7 +299,7 @@
             "icon": {
                 "type": "fa",
                 "content": "cogs",
-                "bg": "#120f12"
+                "bg": ""
             },
             "openMode": "normal",
             "plugin": false,
@@ -359,9 +363,9 @@
             "badge": 0,
             "desc": "",
             "icon": {
-                "type": "fa",
-                "content": "barcode",
-                "bg": "#2d2647"
+                "type": "img",
+                "content": "https://esironal.github.io/ylui-desk/res/icons/icon-android.png",
+                "bg": ""
             },
             "openMode": "normal",
             "plugin": false,
@@ -425,9 +429,9 @@
             "badge": 0,
             "desc": "",
             "icon": {
-                "type": "str",
-                "content": "",
-                "bg": "rgb(82,186,63)"
+                "type": "img",
+                "content": "https://pbs.twimg.com/profile_images/567912107333541888/5hr0eN0P_400x400.png",
+                "bg": ""
             },
             "openMode": "normal",
             "plugin": false,
@@ -446,10 +450,10 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "",
-            "url": "",
+            "title": "Flip",
+            "url": "https://flipp.com/weekly_ads?postal_code=31088",
             "customTile": "",
-            "urlRandomToken": true
+            "urlRandomToken": false
         },
         "app-168": {
             "addressBar": false,
@@ -458,9 +462,9 @@
             "badge": 0,
             "desc": "",
             "icon": {
-                "type": "fa",
-                "content": "sticky-note",
-                "bg": "rgb(105,46,199)"
+                "type": "img",
+                "content": "https://esironal.github.io/ylui-desk/res/icons/Simplenote.png",
+                "bg": ""
             },
             "openMode": "normal",
             "plugin": false,
@@ -491,9 +495,9 @@
             "badge": 0,
             "desc": "",
             "icon": {
-                "type": "str",
-                "content": "",
-                "bg": "rgb(127,136,132)"
+                "type": "img",
+                "content": "https://esironal.github.io/ylui-desk/res/file_icon/icon_file/json.png",
+                "bg": ""
             },
             "openMode": "normal",
             "plugin": false,
@@ -512,10 +516,10 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "",
-            "url": "",
+            "title": "edit - basic.json",
+            "url": "http://localhost/kode/index.php?editor/edit#filename=%2Fvar%2Fwww%2Fhtml%2Fylui%2Fsaves%2Fbasic.json",
             "customTile": "",
-            "urlRandomToken": true
+            "urlRandomToken": false
         },
         "app-170": {
             "addressBar": false,
@@ -623,9 +627,9 @@
             "badge": 0,
             "desc": "",
             "icon": {
-                "type": "str",
-                "content": "",
-                "bg": "rgb(167,114,122)"
+                "type": "fa",
+                "content": "gear",
+                "bg": "#13186b"
             },
             "openMode": "normal",
             "plugin": false,
@@ -644,8 +648,8 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "",
-            "url": "",
+            "title": "ylui-desk",
+            "url": "http://esironal.github.io/ylui-desk",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -689,9 +693,9 @@
             "badge": 0,
             "desc": "",
             "icon": {
-                "type": "str",
-                "content": "",
-                "bg": "rgb(184,189,187)"
+                "type": "img",
+                "content": "https://esironal.github.io/ylui-desk/res/icons/leanote.png",
+                "bg": ""
             },
             "openMode": "normal",
             "plugin": false,
@@ -710,8 +714,8 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "",
-            "url": "",
+            "title": "Leanote",
+            "url": "https://leanote.com/note",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -822,8 +826,8 @@
             "desc": "",
             "icon": {
                 "type": "img",
-                "content": "https://raindrop.io/files/drop45405891/45405891_floppy-drive-5-14.png",
-                "bg": "rgb(197,167,120)"
+                "content": "https://raindrop.io/files/drop45847903/45847903_folder1.png",
+                "bg": ""
             },
             "openMode": "normal",
             "plugin": false,
@@ -887,9 +891,9 @@
             "badge": 0,
             "desc": "",
             "icon": {
-                "type": "str",
-                "content": "",
-                "bg": "rgb(99,12,188)"
+                "type": "img",
+                "content": "https://esironal.github.io/ylui-desk/res/icons/raindrop-icon-128.png",
+                "bg": ""
             },
             "openMode": "normal",
             "plugin": false,
@@ -908,10 +912,10 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "",
-            "url": "",
+            "title": "Raindrop",
+            "url": "https://raindrop.io/",
             "customTile": "",
-            "urlRandomToken": true
+            "urlRandomToken": false
         },
         "app-182": {
             "addressBar": false,
@@ -1018,7 +1022,20 @@
             "app": "yl-browser",
             "title": "Browser",
             "params": {},
-            "hash": ""
+            "hash": "",
+            "style": {
+                "position": {
+                    "x": 153.5,
+                    "y": 270.5,
+                    "left": true,
+                    "top": true,
+                    "autoOffset": false
+                },
+                "size": {
+                    "height": 614,
+                    "width": 1068
+                }
+            }
         },
         {
             "app": "yl-system",
@@ -1080,7 +1097,20 @@
             "app": "app-182",
             "title": "editor-ylui-index",
             "params": {},
-            "hash": ""
+            "hash": "",
+            "style": {
+                "position": {
+                    "x": 160.64,
+                    "y": 129.64,
+                    "left": true,
+                    "top": true,
+                    "autoOffset": false
+                },
+                "size": {
+                    "height": 439,
+                    "width": 656
+                }
+            }
         },
         {
             "app": "app-170",
@@ -1104,6 +1134,62 @@
             "app": "app-179",
             "title": "File Manager",
             "params": {},
+            "hash": "",
+            "style": {
+                "position": {
+                    "x": 788,
+                    "y": 460.1,
+                    "left": true,
+                    "top": true,
+                    "autoOffset": false
+                },
+                "size": {
+                    "height": 450.80000000000007,
+                    "width": 844
+                }
+            }
+        },
+        {
+            "app": "app-181",
+            "title": "Raindrop",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-173",
+            "title": "ylui-desk",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-175",
+            "title": "Leanote",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-169",
+            "title": "edit - basic.json",
+            "params": {},
+            "hash": "",
+            "style": {
+                "position": {
+                    "x": 224.74,
+                    "y": 168.74,
+                    "left": true,
+                    "top": true,
+                    "autoOffset": false
+                },
+                "size": {
+                    "height": 403,
+                    "width": 730
+                }
+            }
+        },
+        {
+            "app": "app-167",
+            "title": "Flip",
+            "params": {},
             "hash": ""
         }
     ],
@@ -1120,7 +1206,20 @@
                     "title": "系统设置",
                     "i": "110",
                     "params": {},
-                    "hash": ""
+                    "hash": "",
+                    "style": {
+                        "position": {
+                            "x": 168,
+                            "y": 181,
+                            "left": true,
+                            "top": true,
+                            "autoOffset": false
+                        },
+                        "size": {
+                            "height": 409,
+                            "width": 757
+                        }
+                    }
                 },
                 {
                     "x": 0,
@@ -1204,9 +1303,9 @@
                     "y": 10,
                     "w": 2,
                     "h": 2,
-                    "app": "app-168",
-                    "title": "Simple Note",
-                    "i": "194",
+                    "app": "app-173",
+                    "title": "ylui-desk",
+                    "i": "202",
                     "params": {},
                     "hash": ""
                 },
@@ -1215,9 +1314,31 @@
                     "y": 12,
                     "w": 2,
                     "h": 2,
-                    "app": "app-179",
-                    "title": "File Manager",
-                    "i": "196",
+                    "app": "app-175",
+                    "title": "Leanote",
+                    "i": "208",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 14,
+                    "w": 2,
+                    "h": 2,
+                    "app": "app-169",
+                    "title": "edit - basic.json",
+                    "i": "210",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 16,
+                    "w": 2,
+                    "h": 2,
+                    "app": "app-167",
+                    "title": "Flip",
+                    "i": "212",
                     "params": {},
                     "hash": ""
                 }
@@ -1228,8 +1349,8 @@
             "data": [
                 {
                     "x": 0,
-                    "y": 0,
-                    "w": 6,
+                    "y": 2,
+                    "w": 3,
                     "h": 2,
                     "app": "yl-app-store",
                     "title": "应用商店",
@@ -1238,13 +1359,35 @@
                     "hash": ""
                 },
                 {
-                    "x": 0,
+                    "x": 3,
                     "y": 2,
-                    "w": 6,
+                    "w": 3,
                     "h": 2,
                     "app": "yl-app-home",
                     "title": "YLUI 官网",
                     "i": "147",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 3,
+                    "y": 0,
+                    "w": 3,
+                    "h": 2,
+                    "app": "app-168",
+                    "title": "Simple Note",
+                    "i": "194",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 0,
+                    "w": 3,
+                    "h": 2,
+                    "app": "app-179",
+                    "title": "File Manager",
+                    "i": "196",
                     "params": {},
                     "hash": ""
                 }
@@ -1255,6 +1398,30 @@
         "width": 1068,
         "height": 781,
         "sidebar": [
+            {
+                "app": "app-167",
+                "title": "Flip",
+                "params": {},
+                "hash": ""
+            },
+            {
+                "app": "app-169",
+                "title": "edit - basic.json",
+                "params": {},
+                "hash": ""
+            },
+            {
+                "app": "app-175",
+                "title": "Leanote",
+                "params": {},
+                "hash": ""
+            },
+            {
+                "app": "app-173",
+                "title": "ylui-desk",
+                "params": {},
+                "hash": ""
+            },
             {
                 "app": "app-180",
                 "title": "",
@@ -1366,6 +1533,30 @@
             "itemPushed-195": {
                 "app": "app-179",
                 "title": "File Manager",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-201": {
+                "app": "app-173",
+                "title": "ylui-desk",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-207": {
+                "app": "app-175",
+                "title": "Leanote",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-209": {
+                "app": "app-169",
+                "title": "edit - basic.json",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-211": {
+                "app": "app-167",
+                "title": "Flip",
                 "params": {},
                 "hash": ""
             }
