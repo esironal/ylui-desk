@@ -1,10 +1,10 @@
 {
-  "name": "YLUI",
+  "name": "ylui-desk",
   "main": "index.html",
-  "description": "新一代云桌面",
+  "description": "esironal-desk",
   "version": "2.1.0",
   "window": {
-    "title": "YLUI",
+    "title": "esironal-desk",
     "icon": "link.png",
     "toolbar": false,
     "resizable": true,
@@ -21,7 +21,7 @@
   },
   "webkit": {
     "plugin": true,
-    "java": false,
+    "java": true,
     "page-cache": false
   }
 }
