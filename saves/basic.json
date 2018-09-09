@@ -10,7 +10,7 @@
         "wallpaperSlideTime": 1519442460788,
         "wallpaperSlideIndex": 8,
         "openMax": 9,
-        "idCounter": 210,
+        "idCounter": 216,
         "themeColor": "#030303",
         "autoThemeColor": true,
         "wallpapers": [
@@ -84,7 +84,7 @@
         ],
         "pathRes": "./res",
         "shortcutsSortAuto": true,
-        "debug": false,
+        "debug": true,
         "winBlur": true
     },
     "apps": {
@@ -93,7 +93,7 @@
             "autoRun": 0,
             "background": false,
             "badge": 0,
-            "desc": "YLUI系统设置面板",
+            "desc": "YLUI System",
             "icon": {
                 "type": "img",
                 "bg": "",
@@ -149,7 +149,7 @@
                 "width": "207",
                 "height": "239"
             },
-            "title": "取色器",
+            "title": "colorPicker",
             "url": "./res/apps/colorPicker/colorPicker.html",
             "customTile": "",
             "urlRandomToken": true
@@ -182,7 +182,7 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "浏览器",
+            "title": "Browser",
             "url": "./res/apps/browser/index.html",
             "customTile": "",
             "urlRandomToken": true
@@ -215,7 +215,7 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "应用商店",
+            "title": "appstore",
             "url": "https://appstore.ylui.yuri2.cn",
             "customTile": "",
             "urlRandomToken": true
@@ -657,7 +657,7 @@
             "desc": "",
             "icon": {
                 "type": "img",
-                "content": "https://raindrop.io/img/templates/devicemacbook.png",
+                "content": "https://uploads-ssl.webflow.com/5a9d00dba5e9fa00010cb403/5aabdc67682f561bb2c42489_AM-logo-neg-hor.svg",
                 "bg": ""
             },
             "openMode": "normal",
@@ -822,7 +822,7 @@
             "desc": "",
             "icon": {
                 "type": "img",
-                "content": "/res/icons/leanote.png",
+                "content": "./res/icons/leanote.png",
                 "bg": ""
             },
             "openMode": "normal",
@@ -855,7 +855,7 @@
             "desc": "",
             "icon": {
                 "type": "img",
-                "content": "http://127.0.0.1:8080/res/icons/miniapp.png",
+                "content": "./res/icons/miniapp.png",
                 "bg": ""
             },
             "openMode": "normal",
@@ -976,6 +976,105 @@
             },
             "title": "PlayCode",
             "url": "https://playcode.io/online-html-editor",
+            "customTile": "",
+            "urlRandomToken": false
+        },
+        "ShareCodes": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "ShareCodes",
+                "bg": "rgb(3,20,52)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "ShareCodes",
+            "url": "https://codeshare.io/codes",
+            "customTile": "",
+            "urlRandomToken": false
+        },
+        "ylui-esironal.json": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "ylui-esironal.json",
+                "bg": "#420d42"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "ylui-esironal.json",
+            "url": "https://codeshare.io/5XvRq8",
+            "customTile": "",
+            "urlRandomToken": false
+        },
+        "NotePad": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "NotePad",
+                "bg": "rgb(119,30,130)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "NotePad",
+            "url": "https://codeshare.io/5zqZJE",
             "customTile": "",
             "urlRandomToken": false
         }
@@ -1125,6 +1224,24 @@
         {
             "app": "app-181",
             "title": "socrates",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "ShareCodes",
+            "title": "ShareCodes",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "ylui-esironal.json",
+            "title": "ylui-esironal.json",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "NotePad",
+            "title": "NotePad",
             "params": {},
             "hash": ""
         }
@@ -1277,6 +1394,28 @@
                     "i": "209",
                     "params": {},
                     "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 14,
+                    "w": 2,
+                    "h": 2,
+                    "app": "ylui-esironal.json",
+                    "title": "ylui-esironal.json",
+                    "i": "214",
+                    "params": {},
+                    "hash": ""
+                },
+                {
+                    "x": 0,
+                    "y": 16,
+                    "w": 2,
+                    "h": 2,
+                    "app": "NotePad",
+                    "title": "NotePad",
+                    "i": "215",
+                    "params": {},
+                    "hash": ""
                 }
             ]
         },
@@ -1345,6 +1484,12 @@
         "width": 1068,
         "height": 781,
         "sidebar": [
+            {
+                "app": "ShareCodes",
+                "title": "ShareCodes",
+                "params": {},
+                "hash": ""
+            },
             {
                 "app": "app-180",
                 "title": "Leanote",
@@ -1467,4 +1612,4 @@
             }
         }
     }
-}
+}u
