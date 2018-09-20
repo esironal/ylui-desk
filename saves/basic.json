@@ -10,7 +10,7 @@
         "wallpaperSlideTime": 1519442460788,
         "wallpaperSlideIndex": 8,
         "openMax": 9,
-        "idCounter": 222,
+        "idCounter": 223,
         "themeColor": "rgba(67,68,60,1)",
         "autoThemeColor": true,
         "wallpapers": [
@@ -78,14 +78,14 @@
                 "preview": "./res/img/wallpapers/bg15_1.jpg"
             },
             {
-                "image": "./res/img/wallpapers/45406180_nature-wallpapers.jpg",
-                "preview": "./res/img/wallpapers/45406180_nature-wallpapers.jpg"
+                "image": "https://raindrop.io/files/drop45406180/45406180_nature-wallpapers.jpg",
+                "preview": ""
             }
         ],
         "pathRes": "./res",
-        "shortcutsSortAuto": false,
+        "shortcutsSortAuto": true,
         "debug": true,
-        "winBlur": false
+        "winBlur": true
     },
     "apps": {
         "yl-system": {
@@ -1110,6 +1110,39 @@
             "url": "https://content-editor.surge.sh/esironal/ylui-desk/master",
             "customTile": "",
             "urlRandomToken": false
+        },
+        "app-222": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "fa",
+                "content": "cog",
+                "bg": "#0d0d0d"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "config-json",
+            "url": "https://content-editor.surge.sh/esironal/ylui-desk/master/saves/basic.json",
+            "customTile": "",
+            "urlRandomToken": false
         }
     },
     "shortcuts": [
@@ -1287,6 +1320,12 @@
         {
             "app": "app-167",
             "title": "github-api-demo",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-222",
+            "title": "config-json",
             "params": {},
             "hash": ""
         }
