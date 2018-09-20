@@ -2,7 +2,7 @@
     "configs": {
         "topTaskBar": false,
         "sound": false,
-        "wallpaper": "./res/img/wallpapers/bg11.jpg",
+        "wallpaper": "https://raindrop.io/files/drop45406180/45406180_nature-wallpapers.jpg",
         "wallpaperBlur": false,
         "wallpaperSlide": false,
         "wallpaperSlideRandom": true,
