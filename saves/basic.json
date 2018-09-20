@@ -2,7 +2,7 @@
     "configs": {
         "topTaskBar": false,
         "sound": false,
-        "wallpaper": "https://raindrop.io/files/drop45406180/45406180_nature-wallpapers.jpg",
+        "wallpaper": "./res/img/wallpapers/bg11.jpg",
         "wallpaperBlur": false,
         "wallpaperSlide": false,
         "wallpaperSlideRandom": true,
@@ -10,8 +10,8 @@
         "wallpaperSlideTime": 1519442460788,
         "wallpaperSlideIndex": 8,
         "openMax": 9,
-        "idCounter": 216,
-        "themeColor": "#030303",
+        "idCounter": 222,
+        "themeColor": "rgba(67,68,60,1)",
         "autoThemeColor": true,
         "wallpapers": [
             {
@@ -78,14 +78,14 @@
                 "preview": "./res/img/wallpapers/bg15_1.jpg"
             },
             {
-                "image": "https://raindrop.io/files/drop45406180/45406180_nature-wallpapers.jpg",
-                "preview": ""
+                "image": "./res/img/wallpapers/45406180_nature-wallpapers.jpg",
+                "preview": "./res/img/wallpapers/45406180_nature-wallpapers.jpg"
             }
         ],
         "pathRes": "./res",
-        "shortcutsSortAuto": true,
+        "shortcutsSortAuto": false,
         "debug": true,
-        "winBlur": true
+        "winBlur": false
     },
     "apps": {
         "yl-system": {
@@ -126,7 +126,7 @@
             "autoRun": 0,
             "background": false,
             "badge": 0,
-            "desc": "简单的取色器",
+            "desc": "�U��rh",
             "icon": {
                 "type": "fa",
                 "bg": "#3289c7",
@@ -159,7 +159,7 @@
             "autoRun": 0,
             "background": false,
             "badge": 0,
-            "desc": "浏览器",
+            "desc": "",
             "icon": {
                 "type": "fa",
                 "content": "internet-explorer",
@@ -185,7 +185,7 @@
             "title": "Browser",
             "url": "./res/apps/browser/index.html",
             "customTile": "",
-            "urlRandomToken": true
+            "urlRandomToken": false
         },
         "yl-app-store": {
             "addressBar": false,
@@ -225,7 +225,7 @@
             "autoRun": 0,
             "background": false,
             "badge": 0,
-            "desc": "YLUI官方网站",
+            "desc": "YLUI��Q�",
             "icon": {
                 "type": "fa",
                 "content": "yoast",
@@ -248,7 +248,7 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "YLUI 官网",
+            "title": "YLUI �Q",
             "url": "https://ylui.yuri2.cn",
             "customTile": "",
             "urlRandomToken": true
@@ -258,7 +258,7 @@
             "autoRun": 1,
             "background": false,
             "badge": 0,
-            "desc": "YLUI官方后台服务",
+            "desc": "YLUI����",
             "icon": {
                 "type": "fa",
                 "content": "yoast",
@@ -281,7 +281,7 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "YLUI官方后台服务",
+            "title": "YLUI����",
             "url": "https://server.ylui.yuri2.cn",
             "customTile": "",
             "urlRandomToken": true
@@ -425,8 +425,8 @@
             "badge": 0,
             "desc": "",
             "icon": {
-                "type": "img",
-                "content": "https://raindrop.io/files/drop45405967/45405967_appiconshadow2x.png",
+                "type": "str",
+                "content": "Github",
                 "bg": ""
             },
             "openMode": "normal",
@@ -446,8 +446,8 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "",
-            "url": "",
+            "title": "github-api-demo",
+            "url": "http://timwis.com/github-api-demo/",
             "customTile": "",
             "urlRandomToken": false
         },
@@ -1077,6 +1077,39 @@
             "url": "https://codeshare.io/5zqZJE",
             "customTile": "",
             "urlRandomToken": false
+        },
+        "app-220": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "img",
+                "content": "https://raindrop.io/files/drop45405967/45405967_appiconshadow2x.png",
+                "bg": ""
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "Surge Github Content Editor",
+            "url": "https://content-editor.surge.sh/esironal/ylui-desk/master",
+            "customTile": "",
+            "urlRandomToken": false
         }
     },
     "shortcuts": [
@@ -1242,6 +1275,18 @@
         {
             "app": "NotePad",
             "title": "NotePad",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-220",
+            "title": "Surge Github Content Editor",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-167",
+            "title": "github-api-demo",
             "params": {},
             "hash": ""
         }
@@ -1546,7 +1591,7 @@
             },
             {
                 "app": "yl-system",
-                "title": "系统设置"
+                "title": "�߾n"
             }
         ],
         "menu": {
@@ -1607,6 +1652,12 @@
             "itemPushed-205": {
                 "app": "app-180",
                 "title": "Leanote",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-221": {
+                "app": "app-220",
+                "title": "Surge Github Content Editor",
                 "params": {},
                 "hash": ""
             }
