@@ -126,7 +126,7 @@
             "autoRun": 0,
             "background": false,
             "badge": 0,
-            "desc": "€U„Örh",
+            "desc": "ï¿½Uï¿½ï¿½rh",
             "icon": {
                 "type": "fa",
                 "bg": "#3289c7",
@@ -225,7 +225,7 @@
             "autoRun": 0,
             "background": false,
             "badge": 0,
-            "desc": "YLUI˜¹QÙ",
+            "desc": "YLUIï¿½ï¿½Qï¿½",
             "icon": {
                 "type": "fa",
                 "content": "yoast",
@@ -248,7 +248,7 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "YLUI ˜Q",
+            "title": "YLUI ï¿½Q",
             "url": "https://ylui.yuri2.cn",
             "customTile": "",
             "urlRandomToken": true
@@ -258,7 +258,7 @@
             "autoRun": 1,
             "background": false,
             "badge": 0,
-            "desc": "YLUI˜¹ð¡",
+            "desc": "YLUI",
             "icon": {
                 "type": "fa",
                 "content": "yoast",
@@ -281,7 +281,7 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "YLUI˜¹ð¡",
+            "title": "YLUI",
             "url": "https://server.ylui.yuri2.cn",
             "customTile": "",
             "urlRandomToken": true
@@ -1744,7 +1744,7 @@
             },
             {
                 "app": "yl-system",
-                "title": "ûß¾n"
+                "title": "ï¿½ß¾n"
             }
         ],
         "menu": {
