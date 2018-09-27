@@ -10,7 +10,7 @@
         "wallpaperSlideTime": 1519442460788,
         "wallpaperSlideIndex": 8,
         "openMax": 9,
-        "idCounter": 251,
+        "idCounter": 257,
         "themeColor": "rgba(50,59,52,1)",
         "autoThemeColor": true,
         "wallpapers": [
@@ -126,7 +126,7 @@
             "autoRun": 0,
             "background": false,
             "badge": 0,
-            "desc": "ï¿½Uï¿½ï¿½rh",
+            "desc": "ýUýýrh",
             "icon": {
                 "type": "fa",
                 "bg": "#3289c7",
@@ -225,7 +225,7 @@
             "autoRun": 0,
             "background": false,
             "badge": 0,
-            "desc": "YLUIï¿½ï¿½Qï¿½",
+            "desc": "YLUIýýQý",
             "icon": {
                 "type": "fa",
                 "content": "yoast",
@@ -248,7 +248,7 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "YLUI ï¿½Q",
+            "title": "YLUI ýQ",
             "url": "https://ylui.yuri2.cn",
             "customTile": "",
             "urlRandomToken": true
@@ -1176,6 +1176,39 @@
             "url": "http://microjs.com/",
             "customTile": "",
             "urlRandomToken": false
+        },
+        "app-255": {
+            "addressBar": false,
+            "autoRun": 0,
+            "background": false,
+            "badge": 0,
+            "desc": "",
+            "icon": {
+                "type": "str",
+                "content": "China-Desk",
+                "bg": "rgb(130,91,30)"
+            },
+            "openMode": "normal",
+            "plugin": false,
+            "position": {
+                "autoOffset": true,
+                "left": true,
+                "top": true,
+                "x": "x*0.05",
+                "y": "y*0.05"
+            },
+            "version": "1.0.0",
+            "poweredBy": "",
+            "resizable": true,
+            "single": false,
+            "size": {
+                "height": "y*0.8-80",
+                "width": "x*0.8"
+            },
+            "title": "China-Desk",
+            "url": "https://esironal.github.io:/china-desk/",
+            "customTile": "",
+            "urlRandomToken": true
         }
     },
     "shortcuts": [
@@ -1365,6 +1398,12 @@
         {
             "app": "app-223",
             "title": "Micro Js",
+            "params": {},
+            "hash": ""
+        },
+        {
+            "app": "app-255",
+            "title": "China-Desk",
             "params": {},
             "hash": ""
         }
@@ -1744,7 +1783,7 @@
             },
             {
                 "app": "yl-system",
-                "title": "ï¿½ß¾n"
+                "title": "ýþn"
             }
         ],
         "menu": {
@@ -1811,6 +1850,12 @@
             "itemPushed-221": {
                 "app": "app-220",
                 "title": "Surge Github Content Editor",
+                "params": {},
+                "hash": ""
+            },
+            "itemPushed-256": {
+                "app": "app-255",
+                "title": "China-Desk",
                 "params": {},
                 "hash": ""
             }
