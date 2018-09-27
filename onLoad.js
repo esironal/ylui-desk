@@ -1,3 +1,4 @@
+console.re.log('remote log test');
 YL.onLoad(function () {
   var loadFromFile = function (file) {
     //文件启动
