@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="cn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>...</title>
+    <title>ylui-desk</title>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<script src="//console.re/connector.js" data-channel="ylui-desk" id="consolerescript"></script>
     <link rel="stylesheet" href="./res/css/loading.css"/>
     <script src="res/yl.js"></script>
     <script src="onLoad.js"></script>
@@ -27,7 +28,7 @@
     </div>
     <p id="loading-powered-by"></p>
 </div>
-<!--图标模板-->
+<!--Icon template-->
 <script type="text/x-template" id="tpl-icon">
     <div :class="[drawer?'icon-drawer-pre':'icon']" :style="{background:nobg?'none':icon.bg}">
         <template v-if="icon.type==='str'">
@@ -44,7 +45,7 @@
     </div>
 </script>
 
-<!--菜单模板-->
+<!--Menu template-->
 <script type="text/x-template" id="tpl-menu">
     <div class="menu" @contextmenu.self="onMainContextMenu($event)">
         <yl-menu-item
@@ -94,10 +95,10 @@
 <div id="yl" :class="{'small-screen':runtime.isSmallScreen,'horizontal-screen':runtime.isHorizontalScreen}"
      style="display: none;opacity: 0" unselectable="on"
      v-show="ready">
-    <!--桌面 图标 抽屉 窗体-->
+    <!--Desktop icon drawer form-->
     <div class="desktop "
          :style="{top:configs.topTaskBar?40+'px':0}">
-        <!--图标-->
+        <!--icon-->
         <div class="shortcut" :class="shortcutClass(id,s)" v-for="(s, id) in shortcuts"
              :key="id"
              @mousedown="shortcutMouseDown(id,null, $event)"
@@ -119,7 +120,7 @@
             </div>
         </div>
 
-        <!--抽屉渲染-->
+        <!--Drawer rendering-->
         <transition name="opacity">
             <div class="shader " v-if="shortcuts[drawer]"
                  @mousedown.self="if(Date.now()-runtime.shortcutOpenedAt>500) drawer=null"
@@ -143,7 +144,7 @@
             </div>
         </transition>
 
-        <!--窗体渲染-->
+        <!--Form rendering-->
         <transition-group name="opacity">
             <div v-for="(w,id) in wins" class="win shadow" :key="id"
                  :id="id"
@@ -158,7 +159,7 @@
                     <div class="bar" :class="{'no-max':w.plugin||!w.resizable}">
                         <div class="mask bar-mask"></div>
                         <div class="mask" :style="{background:configs.themeColor}" style="opacity: 0.9"></div>
-                        <!--标题栏-->
+                        <!--title-->
                         <div class="title" :title="w.title"
                              @contextMenu="winContextMenu(id,$event)"
                              @dblclick="winTitleDblclick(id)"
@@ -206,7 +207,7 @@
                 </div>
             </div>
         </transition-group>
-        <!--背景图-->
+        <!--Background image-->
         <div class="background-mask "
              @click.self="desktopClick"
              @mousemove.self="desktopMouseMove"
@@ -218,18 +219,18 @@
              :style="{'background-image':'url('+runtime.wallpaper+')'}"></div>
     </div>
 
-    <!--任务栏-->
+    <!--mission Board-->
     <div class="bar" @contextMenu="barContextMenu" :style="barStyle" :class="{top:configs.topTaskBar}">
         <div class="mask" :style="{background:configs.themeColor}"></div>
         <div class="mask" :style="{background:'rgba(0,0,0,0.18)'}"></div>
         <div class="mask powered-by" :class="{fade: runtime.winOpened}" >
             Powered by YLUI v{{YL.info.version}}
         </div>
-        <!--开始按钮-->
+        <!--Start button-->
         <div class="btn shadow-hover fa fa-fw"
              :class="[ 'fa-'+YL.info.iconBtnStart, {btnStartOpen: startMenu.open } ]"
              @click="if(startMenu.open){hideOpens();}else{hideOpens();startMenu.open=true} "></div>
-        <!--子窗口的按钮-->
+        <!--Child window button-->
         <div class="btn win-task" @click="winTaskClick(id)"
              :class="{active:id===runtime.winActive&&!winIsMin(id),shadow:id===runtime.winActive&&!winIsMin(id)}"
              v-for="(w,id) in wins" v-if="!w.plugin" @contextMenu="winContextMenu(id,$event)"
@@ -238,12 +239,12 @@
             <div class="title">{{w.title}}</div>
             <div class="line"></div>
         </div>
-        <!--显示桌面-->
+        <!--Display desktop-->
         <div id="yl-btn-right-bottom"
              @click="if(smallScreenAndMenuOpend){runtime.menuOnLeft=!runtime.menuOnLeft} else {showDesktop()}"
              :class="{'fa-exchange':smallScreenAndMenuOpend}"
              class="btn shadow-hover fa fa-fw"></div>
-        <!--消息-->
+        <!--news-->
         <div id="yl-btn-center" class="btn shadow-hover fa fa-fw fa-comment-o" style="float: right"
              @click="btnCenterClick()">
             <div class="badge"
@@ -251,16 +252,16 @@
                  v-show="center.unread">{{center.unread>99?'99+':center.unread}}
             </div>
         </div>
-        <!--时间-->
+        <!--time-->
         <div class="btn shadow-hover" v-show="!runtime.isSmallScreen" v-html="runtime.time"
              @click="runtime.CalendarOpen=!runtime.CalendarOpen;runtime.pluginIconsOpen=false;"
              style="font-size: 12px;line-height: 20px;float: right"></div>
-        <!--托盘按钮-->
+        <!--Tray button-->
         <div class="btn shadow-hover fa fa-fw "
              :class="{'fa-angle-up':!configs.topTaskBar,'fa-angle-down':configs.topTaskBar}"
              style="float: right;padding: 0"
              @click="runtime.pluginIconsOpen=!runtime.pluginIconsOpen;runtime.CalendarOpen=false;"></div>
-        <!--插件托盘盒子-->
+        <!--Plug-in tray box-->
         <transition name="opacity">
             <div class="plugin-icons shadow" v-show="runtime.pluginIconsOpen">
                 <div class="mask" :style="{background:configs.themeColor}" ></div>
@@ -274,7 +275,7 @@
                 </div>
             </div>
         </transition>
-        <!--日历盒子-->
+        <!--Calendar box-->
         <transition name="opacity">
             <div id="_box_time" @contextMenu="ContextMenu.render($event,true)" class="calendar-box shadow"
                  v-show="runtime.CalendarOpen">
@@ -305,7 +306,7 @@
         </transition>
     </div>
 
-    <!--开始菜单-->
+    <!--Start Menu-->
     <transition name="opacity">
         <div class="startMenu shadow"
              :style="{width: runtime.startMenu.width+'px', height: runtime.startMenu.height +'px'}"
@@ -316,7 +317,7 @@
                  :style="{background:configs.themeColor}"></div>
             <div class="startMenu-resize"
                  @mousedown="startMenuResizeMouseDown($event)"></div>
-            <!--左侧边栏-->
+            <!--Left sidebar-->
             <div class="sidebar"
                  :style="{'background-color': configs.themeColor}"
                  :class="{spread:startMenu.sidebar.open,'shadow-hover':startMenu.sidebar.open}"
@@ -336,7 +337,7 @@
                 </div>
             </div>
 
-            <!--主菜单-->
+            <!--main menu-->
             <yl-menu
                     :style="menuStyle"
                     @maincontextmenu="menuMainContextMenu($event)"
@@ -344,7 +345,7 @@
                     @itemclick="menuItemClick($event)" :menu="startMenu.menu" :apps="apps">
             </yl-menu>
 
-            <!--磁贴-->
+            <!--magnet-->
             <div class="tiles-box" @contextMenu="tilesBoxContextMenu($event)" :style="tilesBoxStyle">
                 <div class="tiles-flex-container" :style="{'column-count':runtime.tilesGroupNum}">
                     <div class="tiles" :style="{width: runtime.tilesWidth+'px'}"
@@ -398,7 +399,7 @@
         </div>
     </transition>
 
-    <!--操作中心-->
+    <!--Operation center-->
     <div class="center shadow" :class="{open:center.open}" :style="centerStyle">
         <div class="mask"
              :style="{background:configs.themeColor}"></div>
@@ -427,7 +428,7 @@
             </transition-group>
         </div>
     </div>
-    <!--快捷方式配置-->
+    <!--Shortcut configuration-->
     <transition name="opacity">
         <div class="shader" v-if="shortSetting"
              @click.self="shortSetting=null;runtime.shortcutNewParamName='',runtime.shortcutNewParamValue=''"
@@ -463,7 +464,7 @@
             </div>
         </div>
     </transition>
-    <!--消息预览-->
+    <!--Message preview-->
     <transition-group
             name="custom-classes-transition-msg"
             enter-active-class="animated bounceInRight"
