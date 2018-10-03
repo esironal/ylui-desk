@@ -126,7 +126,7 @@
             "autoRun": 0,
             "background": false,
             "badge": 0,
-            "desc": "�U��rh",
+            "desc": "color piker",
             "icon": {
                 "type": "fa",
                 "bg": "#3289c7",
@@ -225,7 +225,7 @@
             "autoRun": 0,
             "background": false,
             "badge": 0,
-            "desc": "YLUI��Q�",
+            "desc": "YLUI",
             "icon": {
                 "type": "fa",
                 "content": "yoast",
@@ -248,7 +248,7 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "YLUI �Q",
+            "title": "YLUI",
             "url": "https://ylui.yuri2.cn",
             "customTile": "",
             "urlRandomToken": true
